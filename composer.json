@@ -1,0 +1,6 @@
+{
+    "name": "evgenii/leetcode",
+    "require": {
+        "php": "^8.2"
+    }
+}
