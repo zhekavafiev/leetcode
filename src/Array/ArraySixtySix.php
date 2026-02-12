@@ -41,3 +41,13 @@ final readonly class ArraySixtySix
         return $digits;
     }
 }
+
+// Пример использования:
+$solution = new \Array\ArraySixtySix();
+$digits = [1, 2, 9];
+$result = $solution->plusOne($digits);
+var_dump($result); // array(3) { [0]=> int(1) [1]=> int(3) [2]=> int(0) }
+
+$digits2 = [9, 9, 9];
+$result2 = $solution->plusOne($digits2);
+var_dump($result2); // array(4) { [0]=> int(1) [1]=> int(0) [2]=> int(0) [3]=> int(0) }

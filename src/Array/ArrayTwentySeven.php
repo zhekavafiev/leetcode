@@ -31,3 +31,11 @@ final readonly class ArrayTwentySeven
         return $len - $removed;
     }
 }
+
+// Пример использования:
+$solution = new \Array\ArrayTwentySeven();
+$nums = [3, 2, 2, 3];
+$val = 3;
+$result = $solution->removeElement($nums, $val);
+var_dump($result); // int(2)
+var_dump($nums); // array(4) { [1]=> int(2) [2]=> int(2) [3]=> int(3) [4]=> int(3) }

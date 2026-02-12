@@ -43,3 +43,12 @@ final readonly class ArrayEightyEight
         }
     }
 }
+
+// Пример использования:
+$solution = new \Array\ArrayEightyEight();
+$nums1 = [1, 2, 3, 0, 0, 0];
+$m = 3;
+$nums2 = [2, 5, 6];
+$n = 3;
+$solution->merge($nums1, $m, $nums2, $n);
+var_dump($nums1); // array(6) { [0]=> int(1) [1]=> int(2) [2]=> int(2) [3]=> int(3) [4]=> int(5) [5]=> int(6) }
