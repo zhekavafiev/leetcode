@@ -38,3 +38,10 @@ final readonly class ArrayTwentySix
         return count($nums);
     }
 }
+
+// Пример использования:
+$solution = new \Array\ArrayTwentySix();
+$nums = [1, 1, 2, 2, 3, 4, 4, 5];
+$result = $solution->removeDuplicates($nums);
+var_dump($result); // int(5)
+var_dump($nums); // массив без дубликатов

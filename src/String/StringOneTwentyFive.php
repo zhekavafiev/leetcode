@@ -32,3 +32,13 @@ final readonly class StringOneTwentyFive
         return true;
     }
 }
+
+// Пример использования:
+$solution = new \String\StringOneTwentyFive();
+$s = "A man, a plan, a canal: Panama";
+$result = $solution->isPalindrome($s);
+var_dump($result); // bool(true)
+
+$s2 = "race a car";
+$result2 = $solution->isPalindrome($s2);
+var_dump($result2); // bool(false)

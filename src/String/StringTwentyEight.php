@@ -43,3 +43,15 @@ final readonly class StringTwentyEight
         return $result;
     }
 }
+
+// Пример использования:
+$solution = new \String\StringTwentyEight();
+$haystack = "sadbutsad";
+$needle = "sad";
+$result = $solution->strStr($haystack, $needle);
+var_dump($result); // int(0)
+
+$haystack2 = "leetcode";
+$needle2 = "leeto";
+$result2 = $solution->strStr($haystack2, $needle2);
+var_dump($result2); // int(-1)

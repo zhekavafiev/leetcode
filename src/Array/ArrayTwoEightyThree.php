@@ -35,3 +35,9 @@ final readonly class ArrayTwoEightyThree
         }
     }
 }
+
+// Пример использования:
+$solution = new \Array\ArrayTwoEightyThree();
+$nums = [0, 1, 0, 3, 12];
+$solution->moveZeroes($nums);
+var_dump($nums); // array(5) { [0]=> int(1) [1]=> int(3) [2]=> int(12) [3]=> int(0) [4]=> int(0) }

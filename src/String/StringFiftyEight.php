@@ -31,3 +31,13 @@ final readonly class StringFiftyEight
         return strlen($word);
     }
 }
+
+// Пример использования:
+$solution = new \String\StringFiftyEight();
+$s = "Hello World";
+$result = $solution->lengthOfLastWord($s);
+var_dump($result); // int(5)
+
+$s2 = "   fly me   to   the moon  ";
+$result2 = $solution->lengthOfLastWord($s2);
+var_dump($result2); // int(4)

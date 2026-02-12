@@ -52,3 +52,15 @@ final readonly class StringTwoFortyTwo
         return true;
     }
 }
+
+// Пример использования:
+$solution = new \String\StringTwoFortyTwo();
+$s = "anagram";
+$t = "nagaram";
+$result = $solution->isAnagram($s, $t);
+var_dump($result); // bool(true)
+
+$s2 = "rat";
+$t2 = "car";
+$result2 = $solution->isAnagram($s2, $t2);
+var_dump($result2); // bool(false)

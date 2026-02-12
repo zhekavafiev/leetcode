@@ -25,3 +25,16 @@ final readonly class LinkedListEightyThree
         return $head;
     }
 }
+
+// Пример использования:
+$solution = new \Array\LinkedListEightyThree();
+$head = \Array\ListNode::createLinkedList([1, 1, 2, 3, 3]);
+$result = $solution->deleteDuplicates($head);
+var_dump($result); // ListNode объект без дубликатов
+// Для вывода значений:
+$current = $result;
+while ($current !== null) {
+    echo $current->val . " ";
+    $current = $current->next;
+}
+// Выведет: 1 2 3

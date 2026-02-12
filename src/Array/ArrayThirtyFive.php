@@ -35,3 +35,14 @@ final readonly class ArrayThirtyFive
         return $min;
     }
 }
+
+// Пример использования:
+$solution = new \Array\ArrayThirtyFive();
+$nums = [1, 3, 5, 6];
+$target = 5;
+$result = $solution->searchInsert($nums, $target);
+var_dump($result); // int(2)
+
+$target2 = 2;
+$result2 = $solution->searchInsert($nums, $target2);
+var_dump($result2); // int(1)

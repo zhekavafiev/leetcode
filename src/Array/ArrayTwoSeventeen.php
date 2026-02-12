@@ -25,3 +25,13 @@ final readonly class ArrayTwoSeventeen
         return false;
     }
 }
+
+// Пример использования:
+$solution = new \Array\ArrayTwoSeventeen();
+$nums1 = [1, 2, 3, 1];
+$result1 = $solution->containsDuplicate($nums1);
+var_dump($result1); // bool(true)
+
+$nums2 = [1, 2, 3, 4];
+$result2 = $solution->containsDuplicate($nums2);
+var_dump($result2); // bool(false)
