@@ -39,3 +39,15 @@ final readonly class StringNineteenThirtyFive
         return $count;
     }
 }
+
+// Пример использования:
+$solution = new \String\StringNineteenThirtyFive();
+$text = "hello world";
+$brokenLetters = "ad";
+$result = $solution->canBeTypedWords($text, $brokenLetters);
+var_dump($result); // int(1)
+
+$text2 = "leet code";
+$brokenLetters2 = "lt";
+$result2 = $solution->canBeTypedWords($text2, $brokenLetters2);
+var_dump($result2); // int(1)

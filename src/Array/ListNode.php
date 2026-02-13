@@ -34,3 +34,14 @@ class ListNode {
         return $head;
     }
 }
+
+// Пример использования:
+$head = \Array\ListNode::createLinkedList([1, 2, 3, 4, 5]);
+var_dump($head); // ListNode объект
+// Для вывода всех значений:
+$current = $head;
+while ($current !== null) {
+    echo $current->val . " ";
+    $current = $current->next;
+}
+// Выведет: 1 2 3 4 5

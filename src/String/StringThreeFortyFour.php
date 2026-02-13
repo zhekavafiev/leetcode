@@ -31,3 +31,9 @@ final readonly class StringThreeFortyFour
         }
     }
 }
+
+// Пример использования:
+$solution = new \String\StringThreeFortyFour();
+$s = ["h", "e", "l", "l", "o"];
+$solution->reverseString($s);
+var_dump($s); // array(5) { [0]=> string(1) "o" [1]=> string(1) "l" [2]=> string(1) "l" [3]=> string(1) "e" [4]=> string(1) "h" }
